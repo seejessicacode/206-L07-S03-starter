@@ -47,30 +47,30 @@ header,
 section,
 footer {
   /* Add a Flexbox property to make the content-wrapper a flex parent container. */
-
+  display: flex;
   /* Add a Flexbox property to center the contents of each section. */
-
+  justify-content: center;
 }
 
 .content-wrapper {
   width: 90%;
   max-width: 1200px;
   /* Add a Flexbox property to make the content-wrapper a flex parent container. */
-
+  display: flex;
   /* Add the Flexbox property flex-flow: row wrap; to allow the flex child items to wrap. */
-
+  flex-flow: row wrap;
   margin: 50px 0;
 }
 
 .header-content-wrapper {
   /* Add a Flexbox property to make the header-content-wrapper a flex parent container. */
-
+  display: flex;
   /* Add a Flexbox property to center the contents of the header. */
-
+  justify-content: center;
   /* Add a Flexbox property to align the contents at their center. */
-
+  align-items: center;
   /* Add the Flexbox property flex-flow: row wrap; to allow the flex child items to wrap. */
-
+  flex-flow: row wrap;
   width: 100%;
   padding-bottom: 50px;
 }
@@ -86,9 +86,9 @@ footer {
 
 .about-content-wrapper {
   /* Add a Flexbox property to make the about-content-wrapper a flex parent container. */
-
+  display: flex;
   /* Add a Flexbox property to center the paragraph in the header. */
-
+  justify-content: center;
 }
 
 .about-info {
@@ -97,19 +97,19 @@ footer {
 
 .services-content-wrapper {
   /* Add a Flexbox property to make the services-content-wrapper a flex parent container. */
-
+  display: flex;
   /* Add a justify-content property and value so that any extra space in the parent container is between the child flex items as the layout changes and more than one card is on a row.  */
-
+  justify-content: space-between;
   /* Add the Flexbox property flex-flow: row wrap; to allow the flex child items to wrap. */
-
+  flex-flow: row wrap;
 }
 
 .services-description {
   width: 100%;
   /* Add a Flexbox property to make the services-content-wrapper a flex parent container. */
-
+  display: flex;
   /* Add flex-direction: column; so that the services card's child flex items are laid out in a column. */
-
+  flex-direction: column;
   margin-bottom: 50px;
 }
 
@@ -128,13 +128,13 @@ footer {
 
 .testimonial-content-wrapper {
   /* Add a Flexbox property to make the testimonial-content-wrapper a flex parent container. */
-
+  display: flex;
   /* Add a justify-content property and value so that any extra space if the parent container is between the child flex items.  */
-
+  justify-content: space-between;
   /* Add the Flexbox property flex-flow: row wrap; to allow the flex child items to wrap. */
-
+  flex-flow: row wrap;
   /* Add align-items: flex-start; so that the background adjusts to the height of the testimonial. */
-
+  align-items: flex-start;
 }
 
 .testimonial {
@@ -147,11 +147,11 @@ footer {
 
 .footer-content-wrapper {
   /* Add a Flexbox property to make the testimonial-content-wrapper a flex parent container. */
-
+  display: flex;
   /* Add a justify-content property and value so that any extra space if the parent container is around the child flex items.  */
-
+  justify-content: space-around;
   /* Add a Flexbox property to align the contents at their center. */
-
+  align-items: center;
 }
 
 .contact-wrapper {
@@ -160,10 +160,11 @@ footer {
 
 .icon-wrapper {
   /* Add a Flexbox property to make the icon-wrapper a flex parent container. */
-
+  display: flex;
   /* Add a Flexbox property to center the icons in their parent container. */
-
+  justify-content: center;
   /* Add gap: 20px; to create space between the icons. */
+  gap: 20px;
 }
 
 .contact-wrapper i {
@@ -179,14 +180,14 @@ footer {
   .services-description {
     width: 100%;
     /* Add flex-direction: row; so that the services cards layout changes to a row orientation. */
-
+    flex-direction: row;
     /* Add a justify-content property and value so that any extra space if the parent container is between the child flex items.  */
-
+    justify-content: space-between;
   }
 
   .wrap-reverse {
     /* Add flex-direction: row-reverse; to change the direction of the second service */
-
+    flex-direction: row-reverse;
   }
 
   .services-image {
@@ -217,7 +218,7 @@ footer {
 @media (min-width: 1200px) {
   .header-content-wrapper {
     /* Add a justify-content property and value so that any extra space if the parent container is between the h1 and "Book a Consultation link.  */
-
+    justify-content: space-between;
   }
 
   h1 {
@@ -232,9 +233,9 @@ footer {
   .services-description {
     width: 25%;
     /* Add flex-direction: column; so that the services card's child flex items are laid out in a column again. */
-
+    flex-direction: column;
     /* Add justify-content: flex-start; so the text is aligned at the top. */
-
+    justify-content: flex-start;
     margin-bottom: 0;
   }
 
